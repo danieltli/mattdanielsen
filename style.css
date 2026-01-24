@@ -3,12 +3,23 @@
    "how to change link color." */
 
 body {
-  background-color: #6082B6;
-  color: black;
-  font-family: Verdana;
+    background-color: #82c8e5;
+    color: black;
+    font-family: Verdana;
+    margin: 0;
+
+    --building-width: 40ch;
+    box-sizing: border-box;
 }
 
-#matt-pic{
-  width: 100vw
-  
+main {
+    background-image: url("brick_texture.jpg");
+    background-size: 50ch;
+    padding: 1ch;
+    margin: 0 auto;
+    width: var(--building-width);
+}
+
+header {
+    background: #62cf7b;
 }
