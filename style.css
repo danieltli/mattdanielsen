@@ -18,13 +18,17 @@ main {
     padding: 1ch;
     margin: 0 auto;
     width: var(--building-width);
-    border-style:double;
-    border-image: url("brick_texture_darkdark.jpg");
-    border-width: 0 100px 0 0;
-}
 
-header {
-    background: #62cf7b;
+    border: 100px solid black;
+    border-style: inset;
+    border-image: url("brick_texture_dark.jpg") 8% round;
+    border-width: 0 40px 0 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
 .main-building {
@@ -34,10 +38,10 @@ header {
     margin-top: 15px;
 }
 .main-sign {
+    background: #62cf7b;
+
     width: 37ch;
-    border: 2px solid black;
-    border-width: 0 2px 2px 0;
-
-
+    border: 2px solid #436e4d;
+    border-width: 0 8px 0 0;
 }
 
